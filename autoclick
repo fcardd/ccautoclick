@@ -1,0 +1,8 @@
+while wait() do
+local args = {
+    [1] = "Click",
+    [3] = 51914
+}
+
+game:GetService("ReplicatedStorage").Remotes.RemoteEvent:FireServer(unpack(args))
+end
