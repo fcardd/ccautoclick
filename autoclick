@@ -10,11 +10,11 @@ w1:Toggle(
 while wait() do
 local args = {
     [1] = "Click",
-    [3] = 51914
+    [3] = 9186605
 }
 
-game:GetService("ReplicatedStorage").Remotes.RemoteEvent:FireServer(unpack(args))
-end)
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("RemoteEvent"):FireServer(unpack(args))
+end
 
 w1:Toggle(
     "Auto Spin Wheel",
