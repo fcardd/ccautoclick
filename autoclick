@@ -1,8 +1,16 @@
-while wait() do
+local library = loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/0x"))()
+
+local w1 = library:Window("FW case clickers") -- Text
+
+w1:Toggle(
+    "Auto Click",
+    "frz",
+    false,
+    function(toggled)
 local args = {
     [1] = "Click",
     [3] = 51914
 }
 
 game:GetService("ReplicatedStorage").Remotes.RemoteEvent:FireServer(unpack(args))
-end
+end)
