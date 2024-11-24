@@ -14,3 +14,11 @@ local args = {
 
 game:GetService("ReplicatedStorage").Remotes.RemoteEvent:FireServer(unpack(args))
 end)
+
+w1:Toggle(
+    "Auto Spin Wheel",
+    "frz",
+    false,
+    function(toggled)
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("SpinWheel"):InvokeServer()
+end)
