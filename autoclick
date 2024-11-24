@@ -7,6 +7,7 @@ w1:Toggle(
     "frz",
     false,
     function(toggled)
+while wait() do
 local args = {
     [1] = "Click",
     [3] = 51914
